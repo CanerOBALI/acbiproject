@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE menu[
+<!ELEMENT menu (meals, beverages) >
+<!ELEMENT meals (menuItem*) >
+<!ELEMENT beverages (hotBeverages, otherBeverages) >
+<!ELEMENT hotBeverages (menuItem*)>
+<!ELEMENT otherBeverages (menuItem*) >
+<!ELEMENT menuItem (name?, size?, price, description?, imageURL?)>
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT size (#PCDATA) >
+<!ELEMENT price (#PCDATA) >
+<!ELEMENT description (#PCDATA) >
+<!ELEMENT imageURL (#PCDATA) >
+]>
+
+<menu>
+    <meals>
+        <menuItem>
+            <name>
+                Beetroot and feta Salad
+            </name>
+            <price>
+                15.00
+            </price>
+            <description>
+                Suitable for vegetarians, made with fresh beetroot.
+            </description>
+            <imageURL>
+                ../images/Beetroot-Feta-Salad.jpg
+            </imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Sourdough Rye Sandwich
+            </name>
+            <price>
+                18.00
+            </price>
+            <description>
+                Cheese and salad sandwich madde with organic, sourdough rye bread.
+            </description>
+            <imageURL>
+                ../images/Sourdough-Rye-Sandwich.jpg
+            </imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Spanich Pie and Salad
+            </name>
+            <price>
+                20.00
+            </price>
+            <description>
+                Tasty pie with salad
+            </description>
+            <imageURL>
+                ../images/Spinach-Pie-Salad.jpg
+            </imageURL>
+        </menuItem>
+        <menuItem>
+            <name>
+                Feta pancakes with salad
+            </name>
+            <price>
+                19.50
+            </price>
+            <description>
+                Tasty pancake filled with feta and salad
+            </description>
+            <imageURL>
+                ../images/Feta-pancakes-salad.webp
+            </imageURL>
+        </menuItem>
+    </meals>
+    <beverages>
+        <hotBeverages>
+            <menuItem>
+                <size>
+                    Small
+                </size>
+                <price>
+                    3.50
+                </price>
+                <description>
+                    For coffe, please inform the staff of the coffee type.
+                </description>
+            </menuItem>
+            <menuItem>
+                <size>
+                    Regular
+                </size>
+                <price>
+                    4.00
+                </price>
+                <description>
+                    For coffe, please inform the staff of the coffee type.
+                </description>
+            </menuItem>
+            <menuItem>
+                <size>
+                    Large
+                </size>
+                <price>
+                    4.50
+                </price>
+                <description>
+                    For coffe, please inform the staff of the coffee type.
+                </description>
+            </menuItem>
+        </hotBeverages>
+        <otherBeverages>
+            <menuItem>
+                <name>
+                    Soda
+                </name>
+                <price>
+                    3.00
+                </price>
+            </menuItem>  
+            <menuItem>
+                <name>
+                    Fresh juice
+                </name>
+                <price>
+                    6.00
+                </price>
+            </menuItem>
+            <menuItem>
+                <name>
+                    Bottled water
+                </name>
+                <price>
+                    2.00
+                </price>
+            </menuItem>
+        </otherBeverages>
+    </beverages>
+</menu>
+
+
+
+
+
